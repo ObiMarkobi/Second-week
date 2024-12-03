@@ -1,6 +1,5 @@
 package com.corso.java.connectionDB;
 
-import com.corso.java.connectionDB.DBConstant;
 import com.corso.java.utils.LOG;
 
 import java.sql.*;
@@ -15,7 +14,7 @@ public class DBConnection {
 
         try{
 
-            LOG L = new LOG();
+            LOG L = LOG.getInstance();
             //Stringa del driver "com.."
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 
